@@ -404,7 +404,7 @@ void calc_DT() {  // calculate mesh_DT_temp
                     printf("%d %d too big 0! \n", i, j);
                     SaveCSV("mesh_T_post.csv", mesh_T);
                 }
-                if isnan(mesh_DT_temp[i][j]) istherenan = 1;
+                if (isnan(mesh_DT_temp[i][j])) istherenan = 1;
             }
         }
     }

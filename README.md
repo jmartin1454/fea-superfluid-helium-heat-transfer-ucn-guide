@@ -49,3 +49,13 @@ In order to avoid use of heap and dynamic memory allocation (and those terrifyin
 Simple post-processing script can be used to display the temperature distribution after integration. In the provided example, `post.py` reads `mesh_t_post.csv` and displays it using matplotlib.
 
 For monitoring purposes, `run_solver.py` script can be used to launch the compiled solver.
+
+## Dependencies
+
+sudo apt install python3-numpy
+sudo apt install python3-matplotlib
+sudo apt install python3-colormap
+sudo apt install gcc
+make
+python3 mesher.py
+python3 run_solver.py ./solver
